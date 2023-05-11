@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RewardDragon"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".activities.TeamWellBeing"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".BonusDialogActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/ThemeDialogCustom" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".activities.MyCoupons"
+            android:exported="false" />
+        <activity
+            android:name=".activities.WebViewVertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PlayVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:exported="false"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ConfirmPassword"
+            android:exported="true" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manager.MyProfile"
+            android:exported="false" />
+        <activity
+            android:name=".manager.MyConcern"
+            android:exported="false" />
+        <activity
+            android:name=".manager.MyConcernManager"
+            android:exported="false" />
+        <activity
+            android:name=".manager.TeamJosh"
+            android:exported="false" />
+        <activity
+            android:name=".manager.TeamPerformance"
+            android:exported="false" />
+        <activity
+            android:name=".manager.TeamChallenges"
+            android:exported="false" />
+        <activity
+            android:name=".manager.TeamCampaign"
+            android:exported="false" />
+        <activity
+            android:name=".manager.MyResources"
+            android:exported="false" />
+        <activity
+            android:name=".manager.MyTeam"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyGameTime"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyReward"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyJoshForToday"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyPerformance"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyLatestChallenge"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MyCampaigns"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+                as we want to open main activity from our link so we are specifying
+                only in main activity or we can specify that in different activity as well
+            -->
+            <!-- on below line we are adding intent filter to our MainActivity -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="demoserver.aaratechnologies.in"
+                    android:pathPrefix="/resetpassword"
+                    android:port="8089"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="demoserver.aaratechnologies.in"
+                    android:pathPrefix="/resetpassword"
+                    android:port="8089"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <!-- below is the same filter as above just the scheme is changed to http -->
+            <!-- so we can open our app with the url starting with https and http as well -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="demoserver.aaratechnologies.in"
+                    android:pathPrefix="/resetpassword/"
+                    android:port="8089"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="android.getqardio.com.gmslocationtest"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RewardDragon</string>
+    <string name="client_branding">Client Branding</string>
+    <string name="welcome_display_name">Welcome, Display Name</string>
+    <string name="today_s_challenge"><u>Today\'s Challenge</u></string>
+    <string name="click_to_edit"><u>Click to edit</u></string>
+    <string name="title_activity_my_concern">My_Concern</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="my_concern_text">[note after submitting a new concern]\nThanks for raising the concern, your ticket # is XXXX.\nYour Concern will be shared with HR / App Admin\nand Leadership as the case may be.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="my_company_resource">My Company Resource</string>
+    <array name="initial_slider_values">
+        <item>0</item>
+        <item>500000</item>
+    </array>
+
+    <string name="permission_required">File and media permission is required to access Gallery.</string>
+    <string name="permission_granted">Permission is granted. You can use the Gallery now.</string>
+    <string name="forgot_password">Forgot Password</string>
+
+
+    <string name="ayp_play_button">Play button</string>
+    <string name="ayp_null_time">0:00</string>
+    <string name="ayp_open_video_in_youtube">Open video in YouTube</string>
+    <string name="ayp_full_screen_button">Full screen button</string>
+    <string name="ayp_live">LIVE</string>
+    <string name="ayp_custom_action_left">YouTube player Custom action left</string>
+    <string name="ayp_custom_action_right">YouTube player custom action right</string>
+
+
+</resources>

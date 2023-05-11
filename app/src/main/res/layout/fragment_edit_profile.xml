@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="0dp"
+            android:src="@mipmap/logo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,2"
+            android:padding="20dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_column="0"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="center_vertical"
+                    android:text="First Name"
+                    android:textColor="@color/yellow_app"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_column="2"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_span="3"
+                android:background="@color/white" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_column="0"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Last Name"
+                    android:textColor="@color/yellow_app"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_column="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_column="2"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:gravity="center"
+                    android:textColorHint="@color/light_gray"
+                    android:textSize="14sp" />
+
+
+            </TableRow>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_span="3"
+                android:background="@color/white" />
+
+
+
+
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/update"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/gradient_bg"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="@color/yellow_app"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

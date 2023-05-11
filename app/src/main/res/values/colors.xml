@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="purple_200">#ffffbe31</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_app">#ff252525</color>
+    <color name="light_gray">#ff7e7e7e</color>
+    <color name="yellow_app">#ffffbe31</color>
+    <color name="yellow_light">#BF9000</color>
+    <color name="green">#ff16ae57</color>
+    <color name="progress_color">#ff17ab28</color>
+    <color name="green_light">#ff70ad47</color>
+    <color name="red">#fffd0013</color>
+    <color name="yellow_light_2">#D1A647</color>
+    <color name="blue">#0eb1ec</color>
+    <color name="amber">#ed7d31</color>
+    <color name="blue_chart">#4472c4</color>
+    <color name="red_budge">#FF1744</color>
+    <color name="transparentColor">#4c0c1f3b</color>
+    <color name="yellow">#E4AC02</color>
+    <color name="yellow2">#F1B80E</color>
+    <color name="blue22">#2196F3</color>
+    <color name="pink">#E65C8B</color>
+    <color name="dgreen2">#2DC033</color>
+    <color name="orange">#FF5722</color>
+
+
+    <color name="ayp_red">#F44336</color>
+    <color name="ayp_item_selected">#90FFFFFF</color>
+    <color name="ayp_drop_shadow">#66000000</color>
+    <color name="ayp_menu_icons">#757575</color>
+    <color name="ayp_menu_text">#222222</color>
+
+
+    <color name="seek_bar_background">#ababab</color>
+    <color name="seek_bar_progress">#ffb600</color>
+    <color name="seek_bar_secondary_progress">#3399CC</color>
+
+
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/gradient_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/challenge_name_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campaign X [Name]"
+                android:textAllCaps="true"
+                android:textColor="@color/yellow_app"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/expand_btn"
+                android:layout_width="@dimen/header_icon_40dp"
+                android:layout_height="@dimen/header_icon_40dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_add_24"
+                app:tint="@color/yellow_app" />
+
+            <ImageView
+                android:id="@+id/collapse_btn"
+                android:layout_width="@dimen/header_icon_40dp"
+                android:layout_height="@dimen/header_icon_40dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_minus"
+                android:visibility="gone"
+                app:tint="@color/yellow_app" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parentll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Start Date"
+                    android:textColor="@color/yellow_app"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:text="End Date"
+                    android:textColor="@color/yellow_app"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/start_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="DD/MM/YYYY"
+                    android:textColor="@color/white" />
+
+
+
+                <TextView
+                    android:id="@+id/enddate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:text="DD/MM/YYYY"
+                    android:textColor="@color/white" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Criteria / Rules"
+                    android:textColor="@color/yellow_app"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:text="Target"
+                    android:textColor="@color/yellow_app"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:id="@+id/action_btn"
+            android:layout_height="@dimen/header_icon_40dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="false"
+            android:text="End Campaign" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

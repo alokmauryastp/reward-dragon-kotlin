@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"  />
+    <item
+        android:id="@+id/leaderboard"
+        android:icon="@drawable/ic_leaderboard"
+        android:title="Leaderboard" />
+    <item
+        android:id="@+id/wellbeing"
+        android:icon="@drawable/ic_well_being"
+        android:title="Wellbeing" />
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:iconTint="@color/yellow_app"
+        android:title="Notification" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        android:title="Account" />
+
+</menu>
